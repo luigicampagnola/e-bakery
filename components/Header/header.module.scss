@@ -28,8 +28,6 @@
       width: 210px;
     }
   }
-
-
 }
 
 .searchContainer {
@@ -68,4 +66,40 @@
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
   }
+}
+
+.rightContent {
+  display: none;
+  font-weight: bold;
+  margin-left: auto;
+
+  @include md {
+    display: flex;
+  }
+
+  .cartContainer {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px;
+  }
+
+  .cartIcon {
+    margin-right: 8px;
+  }
+
+  .profileContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    position: relative;
+
+    .profilePhoto {
+      border-radius: 50px;
+      margin-right: 14px;
+      z-index: 10;
+    }
+  }
+
+
 }
