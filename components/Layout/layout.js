@@ -2,7 +2,6 @@ import CategoriesBar from "../categories";
 import Header from "../Header";
 import styles from "./layout.module.scss";
 
-const CategoryItems
 
 export default function Layout({ children }) {
   return (

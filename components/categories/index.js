@@ -3,14 +3,16 @@ import Link from "next/link";
 
 const CategoryItem = ({ name, link, emoji }) => {
   return (
-    <li className={styles.categoryItem}>
-      <Link href="/">
-        <a>
-          <span className={styles.emoji}>{emoji}</span>
-          <span>{name}</span>
-        </a>
-      </Link>
-    </li>
+    <div>
+      <li className={styles.categoryItem}>
+        <Link href="/">
+          <a>
+            <span className={styles.emoji}>{emoji}</span>
+            <span>{name}</span>
+          </a>
+        </Link>
+      </li>
+    </div>
   );
 };
 
