@@ -8,21 +8,33 @@
       display: flex;
       margin-bottom: 40px;
       flex-direction: column;
-    }
-    .title {
-      font-size: 28px;
-      margin: 0;
-    }
-    .emoji {
-      font-weight: 400;
-      font-family: sans-serif;
-      margin-right: 10px;
-    }
-    .headerButtons {
-      display: flex;
-      font-size: 14px;
-      font-weight: bold;
-      margin-top: 12px;
+
+      @include md {
+        flex-direction: row;
+      }
+
+      .title {
+        font-size: 28px;
+        margin: 0;
+
+        .emoji {
+          font-weight: 400;
+          font-family: sans-serif;
+          margin-right: 10px;
+        }
+      }
+
+      .headerButtons {
+        display: flex;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 12px;
+
+        @include md{
+          margin-left: auto;
+          margin-top: 0px;
+        }
+      }
     }
   }
 }
