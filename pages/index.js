@@ -2,6 +2,9 @@ import Head from "next/head";
 import styles from "./index.module.scss";
 import Layout from "../components/Layout/layout";
 import FilterButton from "../components/FilterButton";
+import VerticalCard from "../components/HomeCards/vertical";
+import HomeProducts from "../components/Product/HomeProducts";
+import HorizontalCard from "../components/HomeCards/horizontal";
 
 export default function Home() {
   return (
@@ -22,6 +25,21 @@ export default function Home() {
               <FilterButton count={0} />
             </div>
           </div>
+          <HomeProducts>
+            <HorizontalCard
+              bgColor="#F6BD60"
+              title="Get up to 50% off"
+              image="https://i.ibb.co/wL3nWkm/Pngtree-memphis-style-line-point-line-3797599.png"
+            />
+            <HorizontalCard
+              bgColor="#dec8f3"
+              title="New Jordan Series"
+              desc="Best of daily wear"
+              image="https://i.ibb.co/qdY3T5g/kindpng-53319.png"
+            />
+            <VerticalCard bg="#f6f6f6" />
+            <VerticalCard bg="#f6f6f6" />
+          </HomeProducts>
         </main>
       </div>
     </Layout>

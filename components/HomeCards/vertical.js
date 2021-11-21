@@ -1,32 +1,34 @@
-export default function HomeCards() {
-  return <div>Card</div>;
-}
 import Image from "next/image";
-import Style from "./vertical.module.scss";
+import styles from "./vertical.module.scss";
 
-export default function VerticalCard({}){
+export default function VerticalCard({
+  bgColor,  
+}) {
   return (
     <div>
-      <div className={Style.verticalCard}>
+      <div
+        className={styles.verticalCard}
+        style={{
+          backgroundColor: bgColor || "",
+          border: "2px solid #eee",
+        }}
+      >
         18
-        <button>
-          30.25
-        </button>
-        <div>
-          <Image />
+        <button className={styles.favContainer}>30%</button>
+        <div className={styles.imageContainer}>
+          <img src="/pan.jpg" className={styles.image} />
         </div>
-        <div>
-          <h4>Brand</h4>
+        <div className={styles.textContainer}>
+          <h4 className={styles.brandText}>Brand</h4>
           <h4>Product</h4>
         </div>
-{/*         <div>
-          <div>
-            <span>
-              $
-            </span>
+        {/*         <div className={styles.priceContainer}>
+          <div className={styles.prices}>
+            <span className={styles.priceText}>$1</span>
           </div>
         </div> */}
+        <span className={styles.salePriceText}>20$</span>
       </div>
     </div>
-  )
+  );
 }
