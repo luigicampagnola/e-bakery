@@ -18,7 +18,7 @@ export default function Home() {
         <main className={styles.main}>
           <div className={styles.header}>
             <h1 className={styles.title}>
-              <span className={styles.emoji}>🔥</span>Nuevos Productos
+              <span className={styles.emoji}>🎂</span>Productos
             </h1>
             <div className={styles.headerButtons}>
               <FilterButton type="sort" style={{ marginRight: 20 }} />
@@ -28,17 +28,44 @@ export default function Home() {
           <HomeProducts>
             <HorizontalCard
               bgColor="#F6BD60"
-              title="Get up to 50% off"
+              title="LA TOSCANA"
               image="https://i.ibb.co/wL3nWkm/Pngtree-memphis-style-line-point-line-3797599.png"
             />
             <HorizontalCard
               bgColor="#dec8f3"
-              title="New Jordan Series"
-              desc="Best of daily wear"
-              image="https://i.ibb.co/qdY3T5g/kindpng-53319.png"
+              title="Visitanos"
+              desc="11 Avenida S, San Pedro Sula 21104, Honduras"
             />
-            <VerticalCard bg="#f6f6f6" />
-            <VerticalCard bg="#f6f6f6" />
+            <VerticalCard bgColor="#F9D79F" />
+            <VerticalCard bgColor="#F9D79F" />
+          </HomeProducts>
+          <HomeProducts reverse>
+            <HorizontalCard
+              bgColor="#F3C1B9"
+              title="LA TOSCANA"
+              image="https://i.ibb.co/wL3nWkm/Pngtree-memphis-style-line-point-line-3797599.png"
+            />
+            <HorizontalCard
+              bgColor="#E94135"
+              title="Visitanos"
+              desc="11 Avenida S, San Pedro Sula 21104, Honduras"
+            />
+            <VerticalCard bgColor="#F0857F" />
+            <VerticalCard bgColor="#F0857F" />
+          </HomeProducts>
+          <HomeProducts>
+            <HorizontalCard
+              bgColor="#F6BD60"
+              title="LA TOSCANA"
+              image="https://i.ibb.co/wL3nWkm/Pngtree-memphis-style-line-point-line-3797599.png"
+            />
+            <HorizontalCard
+              bgColor="#dec8f3"
+              title="Visitanos"
+              desc="11 Avenida S, San Pedro Sula 21104, Honduras"
+            />
+            <VerticalCard bgColor="#F9D79F" />
+            <VerticalCard bgColor="#F9D79F" />
           </HomeProducts>
         </main>
       </div>
