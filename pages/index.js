@@ -1,7 +1,6 @@
 import Head from "next/head";
 import styles from "./index.module.scss";
 import Layout from "../components/Layout/layout";
-import ButtonComponent from "../components/Button";
 import FilterButton from "../components/FilterButton";
 
 export default function Home() {
