@@ -55,17 +55,17 @@ export default function Home() {
           </HomeProducts>
           <HomeProducts>
             <HorizontalCard
-              bgColor="#F6BD60"
+              bgColor="#99E6B0"
               title="LA TOSCANA"
               image="https://i.ibb.co/wL3nWkm/Pngtree-memphis-style-line-point-line-3797599.png"
             />
             <HorizontalCard
-              bgColor="#dec8f3"
+              bgColor="#f3e6c8"
               title="Visitanos"
               desc="11 Avenida S, San Pedro Sula 21104, Honduras"
             />
-            <VerticalCard bgColor="#F9D79F" />
-            <VerticalCard bgColor="#F9D79F" />
+            <VerticalCard bgColor="#D1E69A" />
+            <VerticalCard bgColor="#D1E69A" />
           </HomeProducts>
         </main>
       </div>
