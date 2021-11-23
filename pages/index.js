@@ -34,6 +34,7 @@ export default function Home() {
             <HorizontalCard
               bgColor="#dec8f3"
               title="Visitanos"
+              image="/cupcake-1.png"
               desc="11 Avenida S, San Pedro Sula 21104, Honduras"
             />
             <VerticalCard bgColor="#F9D79F" />
@@ -48,6 +49,7 @@ export default function Home() {
             <HorizontalCard
               bgColor="#E94135"
               title="Visitanos"
+              image="Fleur.svg.png"
               desc="11 Avenida S, San Pedro Sula 21104, Honduras"
             />
             <VerticalCard bgColor="#F0857F" />
