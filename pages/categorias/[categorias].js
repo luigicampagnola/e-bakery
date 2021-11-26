@@ -3,6 +3,7 @@ import Button from "../../components/FilterButton";
 import Layout from "../../components/Layout/layout";
 import ProductCard from "../../components/ProductCard";
 import styles from "./categorias.module.scss";
+import { useRouter } from "next/router";
 
 const data = [
   {
@@ -61,7 +62,19 @@ const data = [
   },
 ];
 
+const getEmoji = {
+  PAN: "🍞",
+  LACTEOS: "🥛",
+  "PAN DULCE": "🍩",
+  REPOSTERIA: "🍰",
+  BEBIDAS: "🧃",
+  VARIOS: "🥫",
+};
+
 export default function Categorias() {
+  const router = useRouter();
+  const { categorias } = router.query;
+
   return (
     <Layout>
       <div className={styles.container}>
@@ -72,7 +85,9 @@ export default function Categorias() {
         <main className={styles.main}>
           <div className={styles.header}>
             <h1 className={styles.title}>
-              <span className={styles.emoji}>🍞 Pan Simple</span>
+              <span className={styles.emoji}>
+                {getEmoji[categorias]} {categorias}
+              </span>
             </h1>
             <div className={styles.headerButton}>
               <Button type="sort" style={{ marginRight: 20 }} />

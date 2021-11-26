@@ -5,7 +5,7 @@ const CategoryItem = ({ name, link, emoji }) => {
   return (
     <div>
       <li className={styles.categoryItem}>
-        <Link href={link ||"/"}>
+        <Link href={link || "/"}>
           <a>
             <span className={styles.emoji}>{emoji}</span>
             <span>{name}</span>
@@ -21,12 +21,12 @@ export default function CategoriesBar() {
     <div className={styles.container}>
       <h2 className={styles.title}>Categorias</h2>
       <ul className={styles.categories}>
-        <CategoryItem name="PAN" emoji="🍞" link="/categorias/categorias"/>
-        <CategoryItem name="LACTEOS" emoji="🥛" />
-        <CategoryItem name="PAN DULCE" emoji="🍩" />
-        <CategoryItem name="REPOSTERIA" emoji="🍰" />
-        <CategoryItem name="BEBIDAS" emoji="🧃" />
-        <CategoryItem name="VARIOS" emoji="🥫" />
+        <CategoryItem name="PAN" emoji="🍞" link="/categorias/PAN" />
+        <CategoryItem name="LACTEOS" emoji="🥛" link="/categorias/LACTEOS" />
+        <CategoryItem name="PAN DULCE" emoji="🍩" link="/categorias/PAN DULCE" />
+        <CategoryItem name="REPOSTERIA" emoji="🍰" link="/categorias/REPOSTERIA" />
+        <CategoryItem name="BEBIDAS" emoji="🧃" link="/categorias/BEBIDAS" />
+        <CategoryItem name="VARIOS" emoji="🥫" link="/categorias/VARIOS" />
       </ul>
     </div>
   );
