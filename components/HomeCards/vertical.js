@@ -1,9 +1,7 @@
 import Image from "next/image";
 import styles from "./vertical.module.scss";
 
-export default function VerticalCard({
-  bgColor,  
-}) {
+export default function VerticalCard({ bgColor }) {
   return (
     <div>
       <div
@@ -13,7 +11,6 @@ export default function VerticalCard({
           border: "2px solid #eee",
         }}
       >
-        18
         <button className={styles.favContainer}>30%</button>
         <div className={styles.imageContainer}>
           <img src="/pan.jpg" className={styles.image} />

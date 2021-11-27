@@ -17,7 +17,7 @@ const data = [
   },
   {
     id: "01",
-    key: 1,
+    key: 2,
     brand: "La Toscana",
     name: "Pan",
     image: "/chilenas-01.png",
@@ -26,7 +26,7 @@ const data = [
   },
   {
     id: "01",
-    key: 1,
+    key: 3,
     brand: "La Toscana",
     name: "Pan",
     image: "/chilenas-01.png",
@@ -35,7 +35,7 @@ const data = [
   },
   {
     id: "01",
-    key: 1,
+    key: 4,
     brand: "La Toscana",
     name: "Pan",
     image: "/chilenas-01.png",
@@ -44,7 +44,7 @@ const data = [
   },
   {
     id: "01",
-    key: 1,
+    key: 5,
     brand: "La Toscana",
     name: "Pan",
     image: "/chilenas-01.png",
@@ -53,7 +53,7 @@ const data = [
   },
   {
     id: "01",
-    key: 1,
+    key: 6,
     brand: "La Toscana",
     name: "Pan",
     image: "/chilenas-01.png",
@@ -79,7 +79,7 @@ export default function Categorias() {
     <Layout>
       <div className={styles.container}>
         <Head>
-          <title>Pan Simple</title>
+          <title>{categorias}</title>
         </Head>
 
         <main className={styles.main}>
