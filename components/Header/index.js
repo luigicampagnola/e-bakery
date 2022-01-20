@@ -29,7 +29,7 @@ export default function Header() {
           </form>
         </div>
         <div className={styles.rightContent}>
-          <Link href="/cart">
+          <Link href="/Login">
             <div className={styles.cartContainer}>
               <CartIcon width={20} height={20} className={styles.cartIcon} />
             </div>

@@ -1,3 +1,4 @@
+import LoginForm from "./login-form";
 import styles from "./login.module.scss";
 
 export default function Login() {
@@ -13,6 +14,7 @@ export default function Login() {
             <span>Register</span>
           </button>
         </div>
+        <LoginForm />
       </div>
     </div>
   );
